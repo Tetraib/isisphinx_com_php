@@ -1,0 +1,128 @@
+/* -------------------------------- */
+/* ---------- Styles     ---------- */
+/* -------------------------------- */
+
+	body{	background:url(/medias/backoffice/body-bg.png) repeat-x #FFFFFF; font-family:Arial, Helvetica, sans-serif;}
+	#contenair{			color:#000; overflow:hidden; margin-bottom:30px;}
+
+	body #contenair #page form button{		margin:15px 0 0 0;}
+
+/* -------------------------------- */
+/* ---------- Menu  ---------- */
+/* -------------------------------- */
+
+	#menu{				height:45px; padding-top:25px;}
+	#menu li{				float:left; width:100px;}
+	#menu li.logout{		float:right;}
+	
+	#menu li{				font-family:Arial, Helvetica, sans-serif; font-size:10px; float:left; list-style-type:none; display:inline-block; padding:0 15px; margin:5px 5px 0 0; position:relative; background:#999999; line-height:25px; height:25px; color:#000;
+						-webkit-border-top-left-radius: 10px; -webkit-border-top-right-radius: 10px;
+						-moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; 
+						-webkit-box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3);
+						-moz-box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3);
+						box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.3);}
+						
+	#menu li:hover{		height:30px; margin-top:0px;}
+	
+	#menu li.selected,
+	#menu li.selected:hover{		height:35px; margin-top:10px; background:#FFFFFF; background-image:none;}
+	
+	
+	#menu span{				margin-top:5px;}
+	#menu > li,
+	#menu > li > a{			color:#000000; font-weight:bold; text-decoration:none; }
+	#menu > li > a{			display:block; height:100%; width:100%;}
+
+
+/* -------------------------------- */
+/* ---------- CATALOGUE  ---------- */
+/* -------------------------------- */
+
+	#catalogue{}
+	
+	#catalogue .lib{			cursor:pointer;}
+	#catalogue .gammes{			margin-bottom:10px;}
+	#catalogue .lignes{			margin-bottom:10px; margin-left:150px;}
+	#catalogue .produits{		margin-bottom:10px; margin-left:150px;}
+	
+	#catalogue .gamme-lib{		border-bottom:solid 1px #CCCCCC; margin-bottom:5px; padding:5px; line-height:22px;}
+	#catalogue .ligne-lib{		border-bottom:solid 1px #CCCCCC; margin-bottom:5px; padding:5px; line-height:22px;}
+	#catalogue .produit-lib{		border-bottom:solid 1px #CCCCCC; margin-bottom:5px; padding:5px; line-height:22px;}
+	
+	#catalogue .gamme-lib .grip{		margin-top:3px;}
+	#catalogue .ligne-lib .grip{		margin-top:3px;}
+	#catalogue .produit-lib .grip{	margin-top:3px;}
+	
+	
+	#catalogue .puce{					margin-right:5px;}
+	#catalogue .ui-icon{				float:left;}
+	
+	
+	#catalogue .actions{				width:100px; float:right; display:block;}
+	#catalogue .actions .groupe{			float:left; margin:0 0 0 5px; padding:2px 5px; display:block; border:1px solid #CCCCCC;}
+	
+	#catalogue .actions-messages{			width:50px;}
+	
+	#catalogue .vide{			font-style:italic;}
+
+
+/* -------------------------------- */
+/* ---------- PARTENAIRES --------- */
+/* -------------------------------- */
+
+	#page.partenaires{}
+	#tools{	text-align:right;}
+	#page.partenaires button{							margin:0 0 20px 0; text-align:right;}
+	
+	#partenaires .partenaire{							padding:5px; position:relative; min-height:80px; margin-bottom:15px;}
+	#partenaires .partenaire .logo{						float:left; width:326px; margin-left:20px;}
+	#partenaires .partenaire .logo img{					max-width:326px;}
+	#partenaires .partenaire .infos{						float:right; width:556px; margin-right:30px;}
+	#partenaires .partenaire .infos p{						color:#000000;}
+	#partenaires .partenaire	.ui-icon-grip-dotted-vertical{	position:absolute; top:30px; left:0;}
+
+	#partenaires .partenaire .groupe{						position:absolute; top:5px; right:5px; padding:2px 5px; display:block; border:1px solid #CCCCCC;}
+
+	#partenaires .partenaire	.ui-icon-pencil,
+	#partenaires .partenaire	.ui-icon-trash{				display:block;}
+
+
+
+/* -------------------------------- */
+/* ---------- Forms      ---------- */
+/* -------------------------------- */
+
+	.form-edit label{				display:block; width:100%; font-size:1em; color:#999999; border-bottom:#CCCCCC solid 1px; margin-top:25px; margin-bottom:5px; padding-bottom:5px;}
+	.form-edit input[type=text]{		display:block; width:947px; font-size:1em; color:#666666; margin-bottom:5px; padding:3px 5px; border:solid 1px #CCCCCC;}
+	.form-edit textarea{			display:block; width:947px; height:120px; font-size:1em; color:#666666; margin-bottom:5px; padding:3px 5px; border:solid 1px #CCCCCC; resize: none;}
+	.form-edit .disabled{			color:#CCC!important;}
+	
+	.form-modal{					display:none;}
+	.form-modal label{				display:block; width:100%; font-size:1em; color:#999999; border-bottom:#CCCCCC solid 1px; margin-bottom:5px; padding-bottom:5px;}
+	.form-modal input[type=text]{		display:block; width:753px; font-size:1em; color:#666666; margin-bottom:5px; padding:3px 5px; border:solid 1px #CCCCCC;}
+	.form-modal textarea{			display:block; width:753px; height:120px; font-size:1em; color:#666666; margin-bottom:5px; padding:3px 5px; border:solid 1px #CCCCCC; resize: none;}}
+
+/* -------------------------------- */
+/* ---------- Médias     ---------- */
+/* -------------------------------- */
+
+	.medias-content{}
+	.medias-content iframe{		width:100%; border:0; height:650px;}
+
+
+/* -------------------------------- */
+/* ---------- Message    ---------- */
+/* -------------------------------- */
+
+	.messages{		padding:5px;}
+	.messages .ui-icon{	float:left; margin-top:3px; margin-right:5px;}
+
+
+
+	button{		margin-top:25px;}
+
+/* -------------------------------- */
+/* ---------- Classes    ---------- */
+/* -------------------------------- */
+
+	.grip{	cursor:move;}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+.clear:after{ 			content: "."; display: block; clear: both; visibility: hidden; line-height:0; height:0;}
+.clear{				display: inline-block;}
+html[xmlns] .clear{		display: block;}
+* html .clearfix{		height: 1%; overflow: visible;}

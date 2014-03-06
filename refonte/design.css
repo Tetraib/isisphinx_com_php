@@ -1,0 +1,346 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana;
+}
+body{
+	background: black;
+	min-width: 1000px;
+}
+a:focus{
+	outline:0;
+} 
+
+
+
+/*header*/
+#header{
+	background: black;
+}
+#header-image{
+	background: url("images/design/header.jpg") no-repeat center center;
+	height: 115px;
+	width: 100%;
+	min-width: 1000px;
+	margin: auto;
+}
+/*fin header */
+
+
+
+/*menu*/
+/*menu - navigation */
+#menu-navigation{
+	height: 30px;
+	margin: auto;
+	background: url("images/design/navi-grad.jpg");
+	border-top: 1px solid black;
+	border-bottom: 1px solid rgb( 50, 50, 50);
+}
+#menu-navigation ul{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	list-style-type: none;
+	height: 30px;
+	list-style-position: inside;
+}
+#menu-navigation li{
+	display: inline;
+	height: 30px;
+}
+#menu-navigation a{
+	height: 30px;
+	color: white;
+	text-decoration: none;
+}
+#menu-navigation a img:hover{
+	background: url("images/design/navi-grad-hover.png") repeat-x;
+}
+#menu-navigation a:active{
+	outline: none;
+}
+#menu-navigation a img{
+	border: none;
+}
+/*menu - fin navigation*/
+
+/*menu - pellicule */
+#menu-pellicule{
+	margin: auto;
+	height: 140px;
+	background: url("images/navi-peli/navi-peli-bg-grad.jpg");
+	border-bottom: 1px black solid;
+}
+#menu-pellicule-contenu{
+	width: 1000px;
+	margin: auto;
+}
+#menu-pellicule ul{
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	list-style-type: none;
+	list-style-position: inside;
+}
+#menu-pellicule li{
+	display: inline;
+}
+#menu-pellicule a{
+	color: white;
+	text-decoration: none;
+}
+#menu-pellicule a:active{
+	outline: none;
+}
+#menu-pellicule a img{
+	border: none;
+	/*padding-top: 5px;*/
+}
+#menu-pellicule a img:hover{
+	background: url("images/navi-peli/navi-peli-element-hover.jpg") repeat-x;
+}
+/*menu - fin pellucule */
+/*fin menu*/
+
+
+
+/*corps*/
+/*corps - presentation*/
+#ic-gauche-blanc{
+	float: left;
+	height: 550px;
+	width: 50px;
+	background: url("images/page-presentation/ic-blanc.png") no-repeat 10px 45px;
+}
+#presentation{
+	width: 900px;
+	margin: auto;
+}
+#presentation-img-gauche{
+	float: left;
+	margin-left: 20px;
+	height: 550px;
+	width: 240px;
+	background: url("images/page-presentation/image-g-presentation.jpg") no-repeat center 50px;
+}
+#presentation-img-droite{
+	float: right;
+	margin-right: 30px;
+	height: 550px;
+	width: 240px;
+	background: url("images/page-presentation/image-d-presentation.jpg") no-repeat center 50px;
+}
+#texte-presentation{
+	color: rgb( 200, 200, 200);
+	text-align: justify;
+	width: 300px;
+	height: 570px;
+	margin:auto;
+	background: url("images/page-presentation/presentation-bg.jpg") no-repeat center center;
+	padding-top: 65px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#texte-presentation p{
+	font-family: Verdana, Georgia;
+	font-size: 0.85em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*corps - fin presentation*/
+
+/*corps - produit*/
+#cadre-blanc-produit{
+	background: white;
+}
+
+/*corps - produit - indent-texte*/
+.texte-produit-indent{
+	padding-left: 50px;
+}
+.texte-produit-indent-double{
+	padding-left: 100px;
+}
+.texte-produit-indent-demi{
+	padding-left: 25px;
+}
+.texte-produit-indent-inter{
+	padding-left: 75px;
+}
+.texte-produit-indent-double-inter{
+	padding-left: 125px;
+}
+/*corps - produit - fin indent-texte*/
+
+/*corps - produit - slongue*/
+#conteneur-slongue{
+	width: 1000px; 
+	height: 800px;
+	margin: auto; 
+	background: url("images/page-produit/produit-slongue.jpg") no-repeat;
+}
+#conteneur-slongue-texte{
+	padding-top: 325px;
+	padding-left: 225px; 
+	color: rgb( 140, 140, 140);
+	font-size: 1.15em;
+}
+#conteneur-slongue-texte p{
+	margin-bottom: 35px;
+}
+/*corps - produit - fin slongue*/
+/*corps - produit - splate*/
+#conteneur-splate{
+	width: 1000px; 
+	height: 800px;
+	margin: auto; 
+	background: url("images/page-produit/produit-splate.jpg") no-repeat;
+}
+#conteneur-splate-texte{
+	padding-top: 350px;
+	padding-left: 110px; 
+	color: rgb( 140, 140, 140);
+	font-size: 1.15em;
+}
+#conteneur-splate-texte p{
+	margin-bottom: 35px;
+}
+/*corps - produit - fin splate*/
+/*corps - produit - isiscenter*/
+#conteneur-isiscenter{
+	width: 1000px; 
+	height: 800px;
+	margin: auto; 
+	background: url("images/page-produit/produit-isiscenter.jpg") no-repeat;
+}
+#conteneur-isiscenter-texte{
+	padding-top: 360px;
+	padding-left: 75px; 
+	color: rgb( 140, 140, 140);
+	font-size: 1.15em;
+}
+#conteneur-isiscenter-texte p{
+	margin-bottom: 35px;
+}
+/*corps - produit - isiscenter fin */
+/*corps - produit - */
+#conteneur-murale{
+	width: 1000px; 
+	height: 800px;
+	margin: auto; 
+	background: url("images/page-produit/produit-murale.jpg") no-repeat;
+}
+#conteneur-murale-texte{
+	padding-top: 280px;
+	padding-left: 40px; 
+	color: rgb( 140, 140, 140);
+	font-size: 1.15em;
+}
+#conteneur-murale-texte p{
+	margin-bottom: 35px;
+}
+/*corps - produit - murale fin */
+/*corps - produit - pupitre*/
+#conteneur-pupitre{
+	width: 1000px; 
+	height: 800px;
+	margin: auto; 
+	background: url("images/page-produit/produit-pupitre.jpg") no-repeat;
+}
+#conteneur-pupitre-texte{
+	padding-top: 350px;
+	padding-left: 163px; 
+	color: rgb( 140, 140, 140);
+	font-size: 1.15em;
+}
+#conteneur-pupitre-texte p{
+	margin-bottom: 35px;
+}
+/*corps - produit - pupitre fin */
+/*corps - produit - bureau*/
+#conteneur-bureau{
+	width: 1000px; 
+	height: 800px;
+	margin: auto; 
+	background: url("images/page-produit/produit-bureau.jpg") no-repeat;
+}
+#conteneur-bureau-texte{
+	padding-top: 365px;
+	padding-left: 120px; 
+	color: rgb( 140, 140, 140);
+	font-size: 1.15em;
+}
+#conteneur-bureau-texte p{
+	margin-bottom: 35px;
+}
+/*corps - produit - bureaufin */
+/*corps - fin produit*/
+
+
+/*corps - contact*/
+#contact{
+	width: 900px;
+	margin: auto;
+}
+#contact-texte{
+	color: rgb( 200, 200, 200);
+	text-align: justify;
+	width: 300px;
+	height: 570px;
+	margin:auto;
+	background: url("images/page-presentation/presentation-bg.jpg") no-repeat center center;
+	padding-top: 65px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#contact-texte p{
+	padding-top: 20px;
+	font-family: Verdana, Georgia;
+	font-size: 0.85em;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+#contact a{
+	color: rgb( 255, 255, 255);
+	text-decoration: none;
+	outline: none;
+}
+#contact a:hover{
+	color: rgb( 170, 170, 170);
+	text-decoration: none;
+}
+#contact a:active{
+	outline: none;
+}
+/*corps - fin contact*/
+/*fin corps*/
+
+
+
+/*footer*/
+#footer{
+	margin-bottom: 0px;
+	width: 100%;
+	background:  black url("images/design/footer-bg-grad.png") repeat-x;
+	border-top: 1px solid black;
+}
+#footer p{
+	height: 20px;
+	padding-top: 4px;
+	padding-right: 5px;
+	color: rgb( 170, 170, 170);
+	text-align: right;
+	font-size: 0.65em;
+}
+#footer a{
+	text-decoration: none;
+	color: rgb(170, 170, 170);
+}
+#footer a:hover{
+	color: white;
+}
+/*fin footer*/

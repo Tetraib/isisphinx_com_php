@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+			<title>Document sans nom</title>
+	
+			<link rel="stylesheet" type="text/css" media="screen" href="/styles/yui-reset-min.css" />
+			<link rel="stylesheet" type="text/css" media="screen" href="/styles/gs.css" />
+			<link rel="stylesheet" type="text/css" media="screen" href="/styles/admin.css" />
+			<link rel="stylesheet" type="text/css" media="screen" href="/styles/colors.css" />
+			<link rel="stylesheet" type="text/css" media="screen" href="/styles/hacks.css" />
+			
+			<link rel="stylesheet" type="text/css" media="screen" href="/js/jquery-ui/css/blitzer/jquery-ui.css" />
+			<script type="text/javascript" src="/js/jquery.js"></script>	
+			<script type="text/javascript" src="/js/jquery-ui/js/jquery-ui.js"></script>	
+			<script type="text/javascript" src="/js/jquery.cookie.js"></script>	
+	
+			<script type="text/javascript" src="/js/ui.admin.js"></script>	
+			<script type="text/javascript" src="/js/admin.catalogue.js"></script>	
+	
+	</head>
+	
+	<body>
+	
+	
+		<div id="contenair" class="container_24">
+		
+			<ul id="menu">
+				
+				<li class="dashboard"><a href="/admin/">Tableau de bord</a></li>
+				<li><a href="/admin/catalogue/">Catalogue</a></li>
+				<li class="selected"><a href="/admin/pages/">Pages</a></li>
+<!--				<li>Messages</li>-->
+				<li class="logout">Déconnexion</li>
+		
+			</ul>
+			
+			<div id="page" class="page-edit">
+
+	<form id="pages-edit" name="pages-edit" class="form-edit">
+
+		<input type="hidden" id="id-page" name="id-page" value="page-home" />
+
+		<label>Titre</label>
+		<input type="text" id="titre-page" name="titre-page" value="ISISphinx System" />
+		
+		<label>Sous titre</label>
+		<input type="text" id="soustitre-page" name="soustitre-page" value="INFORMATIQUE MÉDICALE CRÉATIVE..." />
+		
+		<label>Texte</label>
+		<textarea id="texte-page" name="texte-page" ><h2>
+	sssssss</h2>
+</textarea>
+		
+		<label class="descriptif">Descriptif</label>
+		<textarea id="descriptif-page" name="descriptif-page" class="descriptif" ></textarea>
+	
+		<label>Paragraphes</label>
+		<textarea id="paragraphes-page" name="paragraphes-page" ><p class="gris">
+	... propose une solution informatique complète<br />
+	et avantageuse,<br />
+	conçue et développée<br />
+	pour les médecins spécialistes.</p>
+</textarea>
+		
+		<label>Images</label>	
+		
+
+
+		<button type="submit">Type</button>
+		
+	</form>
+	
+	
+</div>
+
+
+
+<script>
+
+	$(document).ready(function(){
+	
+
+		$("#texte-page").ckeditor(function(){}, {
+				
+				extraPlugins	: 'autogrow',
+			
+				filebrowserBrowseUrl 		: '/admin/js/pdw_file_browser/index.php?editor=ckeditor',
+				filebrowserImageBrowseUrl 	: '/admin/js/pdw_file_browser/index.php?editor=ckeditor&filter=image',
+				filebrowserFlashBrowseUrl 	: '/admin/js/pdw_file_browser/index.php?editor=ckeditor&filter=flash',
+	
+				toolbar 		:	[
+					{ name: 'clipboard', items : [ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
+					{ name: 'styles', items : [ 'Format','Styles'] },
+					{ name: 'basicstyles', items : [ 'Bold','Italic','Underline','-','RemoveFormat' ] },
+					{ name: 'paragraph', items : [ 'NumberedList','BulletedList','-','Blockquote','-','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock' ] },
+					{ name: 'links', items : [ 'Link','Unlink','Anchor' ] },
+					{ name: 'insert', items : [ 'Image','HorizontalRule','SpecialChar','PageBreak' ] },
+				],
+	
+				contentsCss 	: '/styles/colors.css',
+				format_tags 	: 'h2;h3;p',
+				
+			
+				stylesSet 	: 	[
+
+								    { name : 'titre-medisphinx',   		element : 'h2',		attributes : { 'class' : 'titre-medisphinx' } },
+								    { name : 'titre-isisinformatique',   	element : 'h2',		attributes : { 'class' : 'titre-isisinformatique' } },
+								    { name : 'titre-isisphone',   			element : 'h2',		attributes : { 'class' : 'titre-isisphone' } },
+								    { name : 'titre-isisdesign',   		element : 'h2',		attributes : { 'class' : 'titre-isisdesign' } },
+								    { name : 'titre-isiservice',   		element : 'h2',		attributes : { 'class' : 'titre-isiservice' } },
+
+								    { name : 'Moyen',   			element : 'span',		attributes : { 'class' : 'moyen' } },
+								    { name : 'Grand',   			element : 'span',		attributes : { 'class' : 'grand' } }
+	
+				],
+				
+				justifyClasses 		: [ 'textAlignLeft', 'textAlignCenter', 'textAlignRight', 'textAlignJustify' ],
+				entities				: false,
+				ignoreEmptyParagraph	: true,
+				startupFocus 			: true,
+				
+				bodyClass				: "editor"
+	
+		});	
+
+
+		$("#paragraphes-page").ckeditor(function(){}, {
+				
+				extraPlugins	: 'autogrow',
+			
+				filebrowserBrowseUrl 		: '/admin/js/pdw_file_browser/index.php?editor=ckeditor',
+				filebrowserImageBrowseUrl 	: '/admin/js/pdw_file_browser/index.php?editor=ckeditor&filter=image',
+				filebrowserFlashBrowseUrl 	: '/admin/js/pdw_file_browser/index.php?editor=ckeditor&filter=flash',
+	
+				toolbar 		:	[
+					{ name: 'clipboard', items : [ 'Cut','Copy','Paste','PasteText','PasteFromWord','-','Undo','Redo' ] },
+					{ name: 'styles', items : [ 'Format','Styles'] },
+					{ name: 'basicstyles', items : [ 'Bold','Italic','Underline','-','RemoveFormat' ] },
+					{ name: 'links', items : [ 'Link','Unlink','Anchor' ] },
+				],
+	
+				contentsCss 	: '/styles/colors.css',
+				format_tags 	: 'p',
+				
+			
+				stylesSet 	: 	[
+								    { name : 'Gris',   			element : 'p',		attributes : { 'class' : 'gris' } },
+								    { name : 'Blanc',   			element : 'p',		attributes : { 'class' : 'blanc' } }
+	
+				],
+				
+				justifyClasses 		: [ 'textAlignLeft', 'textAlignCenter', 'textAlignRight', 'textAlignJustify' ],
+				entities				: false,
+				ignoreEmptyParagraph	: true,
+				startupFocus 			: true,
+				
+				bodyClass				: "editor editor-paragraphes"
+	
+		});	
+
+	});
+
+</script>
+
+
+
+
+
+<script type="text/javascript" src="/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="/js/ckeditor/adapters/jquery.js"></script>			
+	
+		</div>
+	
+	</body>
+	
+</html>

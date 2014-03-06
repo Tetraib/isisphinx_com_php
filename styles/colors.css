@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body.editor{				font-family:Arial, Helvetica, sans-serif; background:#000000; color:#FFFFFF;}
+
+body.editor-texte{			width:595px; color:#FFFFFF; font-size:14px;}
+body.editor-paragraphes{		width:340px; color:#FFFFFF; font-size:14px;}
+
+
+
+.cke_panel_listItem{		background:#CCCCCC;}
+
+
+
+
+.color-base{				color:#FFFFFF!important;}
+.color-medisphinx{			color:#C8C8C8!important;}
+.color-isisinformatique{		color:#C8B48C!important;}
+.color-isisphone{			color:#AFAFE1!important;}
+.color-isisdesign{			color:#C81E1E!important;}
+.color-isiservice{			color:#787878!important;}
+
+
+.bg-base{					background-color:#FFFFFF!important;}
+.bg-medisphinx{			background-color:#C8C8C8!important;}
+.bg-isisinformatique{		background-color:#C8B48C!important;}
+.bg-isisphone{				background-color:#AFAFE1!important;}
+.bg-isisdesign{			background-color:#C81E1E!important;}
+.bg-isiservice{			background-color:#787878!important;}
+
+.borderBottom-base{					border-bottom:solid 1px #FFFFFF!important;}
+.borderBottom-medisphinx{			border-bottom:solid 1px #C8C8C8!important;}
+.borderBottom-isisinformatique{		border-bottom:solid 1px #C8B48C!important;}
+.borderBottom-isisphone{				border-bottom:solid 1px #AFAFE1!important;}
+.borderBottom-isisdesign{			border-bottom:solid 1px #C81E1E!important;}
+.borderBottom-isiservice{			border-bottom:solid 1px #787878!important;}
+
+
+.blanc{		color:#FFFFFF;}
+.ligne{		display:block;}
+
+
+.editor h2{				color:#FFFFFF; font-size:20px; font-weight:normal; margin-bottom:5px;}
+
+
+
+.titre-medisphinx{			background:url(/medias/front/menu-puce-medisphinx.png) no-repeat left 8px; padding-left:35px; color:#FFFFFF; display:block; color:#C8C8C8!important;}
+.titre-isisinformatique{		background:url(/medias/front/menu-puce-isisinformatique.png) no-repeat left 8px; padding-left:35px; color:#FFFFFF; display:block; color:#C8B48C!important;}
+.titre-isisphone{			background:url(/medias/front/menu-puce-isisphone.png) no-repeat left 8px; padding-left:35px; color:#FFFFFF; display:block; color:#AFAFE1!important;}
+.titre-isisdesign{			background:url(/medias/front/menu-puce-isisdesign.png) no-repeat left 8px; padding-left:35px; color:#FFFFFF; display:block; color:#C81E1E!important;}
+.titre-isiservice{			background:url(/medias/front/menu-puce-isiservice.png) no-repeat left 8px; padding-left:35px; color:#FFFFFF; display:block; color:#787878!important;}
+
+
+
+.editor p{				margin:0 0 15px 0;}
+.editor-paragraphes p{		text-align:right;}
+
+
+
+/* span */
+
+.moyen{		font-size:16px;}
+.grand{		font-size:20px;}
+.tres_grand{	font-size:25px;}
+
+
+
+
+
+
+
+/* paragraphes */
+
+p{				color:#FFFFFF;}
+p a{				color:#FFFFFF;}
+p:hover{			text-decoration:none;}
+
+.gris{			color:#646464; font-size:20px; text-align:right;}
+.gris a{			color:#646464;}
+.gris a:hover{		text-decoration:none;}
+
+
+
+
+.textAlignLeft{	text-align:left;}
+.textAlignCenter{	text-align:center;}
+.textAlignRight{	text-align:right;}
+.textAlignJustify{	text-align:justify;}
+
